@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace, sans-serif;
+}
+
+:root {
+  --main-clr: #00BFA6;
+  --main-txt-clr: #EBEBEB;
+  --txt-clr: #C2C2C2;
+  --bg-clr: #2F2E41;
+
+  --txt-font: "Open Sans", sans-serif;
+}
+
+body {
+  background: var(--bg-clr);
+  min-height: 100vh;
+  display: flex;
+}
+
+#page-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1092px;
+}
+
+/* ==============================
+              Header
+============================== */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-txt-clr);
+}
+
+/* ==============================
+              Main
+============================== */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 59px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--main-txt-clr);
+}
+
+h1 span, p span {
+  color: var(--main-clr);
+}
+
+section p {
+  color: var(--txt-clr);
+  font-family: var(--txt-font);
+  font-size: 16px;
+  width: 604px;
+}
+
+p strong {
+  font-family: var(--txt-font);
+}
+
+/* ==============================
+              Footer
+============================== */
+
+.line {
+  width: 568px;
+  height: 0;
+  margin: 0 auto 27px;
+  border: 1px solid var(--main-clr);
+}
+
+footer p {
+  color: var(--main-txt-clr);
+  text-align: center;
+}
+
+/* ========================== */
+
+#padlock {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
